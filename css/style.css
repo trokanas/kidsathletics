@@ -1587,12 +1587,14 @@ footer p {
 	color: #3a251b;
 }
 
+
 .footer_tweets p {
 	color: #ffffac;
 	font-size: 1.2rem;
 	position: relative;
 	padding: 10px 0 10px 39px;
-	border-bottom: 1px solid rgba(255,255,255,0.2)
+	
+	/*border-bottom: 1px solid rgba(255,255,255,0.2)*/
 }
 
 .footer_tweets p:first-child {
@@ -1613,6 +1615,10 @@ footer p {
 
 .footer_tweets p:first-child i{
 	top: 4px;
+}
+
+.footer_tweets a{
+	color: #ffffac;
 }
 
 .footer_instagram ul li {
