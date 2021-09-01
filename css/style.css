@@ -956,6 +956,7 @@ margin-right: 5px;
 	position: relative;
 	background: #fff;
 	height: 61px;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .drop1 .active{
@@ -990,6 +991,10 @@ margin-right: 5px;
 
 .drop7 .active{
 	border: 2px solid #49b450;
+	padding: 5px 0;
+}
+.drop8 .active{
+	border: 2px solid #7b2a92;
 	padding: 5px 0;
 }
 
@@ -1187,7 +1192,7 @@ margin-right: 5px;
 
 .mnu ul .drop1 a:hover, .mnu ul .drop2 a:hover, .mnu ul .drop3 a:hover,
 .mnu ul .drop4 a:hover, .mnu ul .drop5 a:hover, .mnu ul .drop6 a:hover,
-.mnu ul .drop7 a:hover {
+.mnu ul .drop7 a:hover, .mnu ul .drop8 a:hover {
 	color: #fff;
 	cursor:pointer;
 }
@@ -1224,6 +1229,10 @@ margin-right: 5px;
 
 .mnu ul .drop7 a:hover,
 .show_mnu .drop7 .active{
+	background: #49b450;
+}
+.mnu ul .drop8 a:hover,
+.show_mnu .drop8 .active{
 	background: #49b450;
 }
 
@@ -1292,6 +1301,10 @@ margin-right: 5px;
 	border-bottom: 8px solid #49b450;
 }
 
+.mnu ul .drop8 ul::before{
+	border-bottom: 8px solid #49b450;
+}
+
 .mnu ul li ul li:last-child{
   border-bottom: none;
 }
@@ -1338,15 +1351,19 @@ margin-right: 5px;
   background: #49b450;
 }
 
+.mnu ul .drop8 ul li{
+	background: #49b450;
+  }
+
 .mnu ul .drop1 ul li:last-child, .mnu ul .drop2 ul li:last-child, .mnu ul .drop3 ul li:last-child,
 .mnu ul .drop4 ul li:last-child, .mnu ul .drop5 ul li:last-child, .mnu ul .drop6 ul li:last-child,
-.mnu ul .drop7 ul li:last-child {
+.mnu ul .drop7 ul li:last-child, .mnu ul .drop8 ul li:last-child {
 	border-radius: 0 0 5px 5px;
 }
 
 .mnu ul .drop1 ul li:first-child, .mnu ul .drop2 ul li:first-child, .mnu ul .drop3 ul li:first-child,
 .mnu ul .drop4 ul li:first-child, .mnu ul .drop5 ul li:first-child, .mnu ul .drop6 ul li:first-child,
-.mnu ul .drop7 ul li:first-child {
+.mnu ul .drop7 ul li:first-child, .mnu ul .drop8 ul li:last-child {
 	border-radius: 5px 5px 0 0;
 }
 
@@ -1467,6 +1484,10 @@ background: #fff;
 }
 
 .mobile_mnu ul .drop7 a{
+	color: #49b450;
+}
+
+.mobile_mnu ul .drop8 a{
 	color: #49b450;
 }
 
@@ -4668,6 +4689,10 @@ background-color: #fff;
 
 .service_activity_v3 .right_block p {
 	font-size: 1.4rem;
+}
+
+.service_activity_v3 .right_block a {
+	text-decoration: underline;
 }
 
 /* 6. Events Page -------------------------*/
