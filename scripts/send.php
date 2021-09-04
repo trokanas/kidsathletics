@@ -6,17 +6,17 @@ if ($_POST) {
     $message = htmlspecialchars($_POST["message"]);
     $json = array(); 
     if (!$name or !$email or !$phone) { 
-        $json['error'] = 'Δεν συμπλήρωσες ολα τα πεδία!';
+        $json['error'] = 'You did not fill the whole field!';
         echo json_encode($json); 
         die(); 
     }
     if(!preg_match("|^[-0-9a-z_\.]+@[-0-9a-z_^\.]+\.[a-z]{2,6}$|i", $email)) {
-        $json['error'] = 'Το email δεν ειναι έγκυρο! >_<'; 
+        $json['error'] = 'Not a valid email! >_<'; 
         echo json_encode($json); 
         die(); 
     }
     if (!preg_match("|^[0-9]+$|", $phone)) {
-        $json['error'] = 'Το τηλέφωνο δεν ειναι έγκυρο! >_<'; 
+        $json['error'] = 'Not a valid phone! >_<'; 
         echo json_encode($json); 
         die(); 
     }
@@ -57,9 +57,9 @@ if ($_POST) {
     $emailgo= new TEmail; 
     $emailgo->from_email= $email; 
     $emailgo->from_name= $name;
-    $emailgo->to_email= 'kdapkidsathletics@gmail.com'; // send the letter
+    $emailgo->to_email= 'trokanas.k@outlook.com'; // send the letter
     $emailgo->to_name= '';
-    $emailgo->subject= 'Kdap Kids Athletics'; // Message subject
+    $emailgo->subject= 'Yeahkids'; // Message subject
     $emailgo->body= 'Phone number: ' . $phone . "\r\n" . 'Message: ' . $message; 
     $emailgo->send(); 
 

@@ -3,12 +3,12 @@ if ($_POST) {
     $email = htmlspecialchars($_POST["email"]);
     $json = array(); 
     if (!$email) { 
-        $json['error'] = 'Δεν συμπλήρωσες τα πεδία!';
+        $json['error'] = 'You did not fill the whole field!';
         echo json_encode($json); 
         die(); 
     }
     if(!preg_match("|^[-0-9a-z_\.]+@[-0-9a-z_^\.]+\.[a-z]{2,6}$|i", $email)) {
-        $json['error'] = 'Το email δεν ειναι έγκυρο! >_<'; 
+        $json['error'] = 'Not a valid email! >_<'; 
         echo json_encode($json); 
         die(); 
     }
@@ -48,8 +48,8 @@ if ($_POST) {
 
     $emailgo= new TEmail; 
     $emailgo->from_email= $email; 
-    $emailgo->from_name= 'KDAP Kids Athletics';
-    $emailgo->to_email= 'kdapkidsathletics@gmail.com'; // send the letter
+    $emailgo->from_name= 'Yearkisd';
+    $emailgo->to_email= 'trokanas.k@outlook.com'; // send the letter
     $emailgo->to_name= 'Newsletters';
     $emailgo->subject= 'Newsletters'; // Message subject
     $emailgo->body= 'E-mail: ' . $email; 
