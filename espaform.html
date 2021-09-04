@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
-	<meta charset="utf-8">
-	<title>ΚΔΑΠ Kids Athletics - ΕΣΠΑ form</title>
-	<meta name="description" content="">
+    <meta charset="utf-8">
+    <title>ΚΔΑΠ Kids Athletics - ΕΣΠΑ form</title>
+    <meta name="description" content="">
 
-	<!-- Mobile Specific Meta -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- Favicon and Apple Touch Icons -->
-	<link rel="shortcut icon" href="img/favicon/favicon1.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Favicon and Apple Touch Icons -->
+    <link rel="shortcut icon" href="img/favicon/favicon1.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
-	<!-- Stylesheets -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
 
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 
-	<link rel="stylesheet" href="css/formstyle.css">
+    <link rel="stylesheet" href="css/style.css">
 
-	<link rel="stylesheet" href="css/media.css?037">
+    <link rel="stylesheet" href="css/media.css?037">
 
-	<!--[if lt IE 9 ]>
+    <!--[if lt IE 9 ]>
 <script src="/js/html5shiv-master/html5shiv.js"></script><meta content="no" http-equiv="imagetoolbar">
 <![endif]-->
 
@@ -34,16 +35,50 @@
 
 <body>
 
-    <form action="https://formsubmit.co/trokanas.k@outlook.com" method="POST">
-        <input type="email" name="email" placeholder="Email Address" required>
-        <input type="text" name="name" placeholder="Όνομα" required>
-        <input type="text" name="surname" placeholder="Επίθετο" required >
-        <input type="hidden" name="_next" value="https://trokanas.github.io/kidsathletics/thankyou.html">
-        <input type="hidden" name="_subject" value="ΕΣΠΑ ΦΟΡΜΑ ΕΚΔΗΛΩΣΗΣ!">
 
 
-        <button type="submit">Send</button>
-   </form>
+
+    <div class="send_us">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="leave_reply">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <h3 class="title">ΕΣΠΑ </h3>
+                            <p class="description">Παρακαλώ συμπεριλαμβάνεται όνομα , email και τηλέφωνο.</p>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="contact_form_blue">
+
+                        <form action="https://formsubmit.co/trokanas.k@outlook.com" method="POST">
+                            <div id="form-messages"></div>
+                            <div class="form-group">
+                                <input id="name" name="name" type="text" placeholder="Όνομα" required="required">
+                            </div>
+                            <div class="form-group m_form-group">
+                                <input class="m_input" id="email" name="email" type="text" placeholder="email"
+                                    required="required">
+                            </div>
+                            <div class="form-group">
+                                <input class="mr_0" id="phone" name="phone" type="text" placeholder="Τηλέφωνο"
+                                    required="required">
+                            </div>
+                            <textarea id="message" name="message" rows="4" placeholder="Μήνυμα" required></textarea>
+                            <div id="messegeResult" class="messegeResult">
+                                <p>Το μήνυμα στάλθηκε με επιτυχία</p>
+                                <button class="button" type="submit">ΑΠΟΣΤΟΛΗ</button>
+                            </div>
+                            <input type="hidden" name="_next"
+                                value="https://trokanas.github.io/kidsathletics/thankyou.html">
+                            <input type="hidden" name="_subject" value="ΕΣΠΑ ΦΟΡΜΑ ΕΚΔΗΛΩΣΗΣ!">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
