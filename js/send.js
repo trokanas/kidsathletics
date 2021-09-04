@@ -18,10 +18,7 @@ $(document).on( 'ready', function() {
                beforeSend: function(data) { 
                     form.find('input[type="submit"]').attr('disabled', 'disabled'); 
                   },
-               success: function(data){ 
-                    if (data['error']) { 
-                        (data['error']); 
-                    } else { 
+               success: function(data){  
                         $("#messegeResult button").fadeOut('fast');
                         setTimeout(function(){
                           $('#messegeResult p').fadeIn('slow')},200);           
@@ -30,7 +27,7 @@ $(document).on( 'ready', function() {
                         setTimeout(function(){
                           $('#messegeResult button').fadeIn('slow')},3500); 
                         $('#contact_form')[0].reset();
-                    }
+                    
                  },
                error: function (xhr, ajaxOptions, thrownError) { 
                     alert(xhr.status); 

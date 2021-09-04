@@ -58,8 +58,8 @@ if ($_POST) {
     $emailgo->from_email= $email; 
     $emailgo->from_name= $name;
     $emailgo->to_email= 'trokanas.k@outlook.com'; // send the letter
-    $emailgo->to_name= '';
-    $emailgo->subject= 'Yeahkids'; // Message subject
+    $emailgo->to_name= 'Konstantinos Trokanas';
+    $emailgo->subject= 'kdap kids'; // Message subject
     $emailgo->body= 'Phone number: ' . $phone . "\r\n" . 'Message: ' . $message; 
     $emailgo->send(); 
 
