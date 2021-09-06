@@ -1653,8 +1653,6 @@ footer p {
 		border: 3px solid #fff;
 		border-radius: 5px;
 		width: 74px
-		-webkit-transition: all .2s linear;
-  		transition: all .2s linear;
 }
 
 .footer_instagram ul li a:hover img{
