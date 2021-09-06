@@ -47,6 +47,15 @@ body, html {
 }
 
 /*---------------------------------------------*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  width: 20%;
+}
+
+
 a {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 14px;
