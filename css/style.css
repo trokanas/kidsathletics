@@ -6106,6 +6106,11 @@ background-color:rgba(0,0,0,0.1);
 	line-height: 1;
 }
 
+.shop_item .item_price .new_price  a{
+	text-decoration: underline;
+	
+}
+
 .shop_item .item_price span,
 .shop_single_item .item_price span{
 	font-family: 'OpenSansBold', sans-serif;
