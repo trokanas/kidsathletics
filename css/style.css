@@ -2046,6 +2046,56 @@ font-size: 1.2rem;
 		color: #4b434d;
 }
 
+.scrollup_phone {
+	position:fixed;
+	bottom: 30px;
+	left: 30px;
+	z-index: 20;
+	text-align: center;
+	border: 6px solid rgba(0,0,0,.3);
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	z-index: 100;
+	
+  }
+  
+  .scrollup_phone span {
+	  background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	left: -3px;
+	top: -3px;
+	right: -3px;
+	bottom: -3px;
+	-webkit-transition: all .2s linear;
+	   transition: all .2s linear;
+  }
+  
+  .scrollup_phone i {
+		  position: absolute;
+		  left: 45%;
+		  margin-left: -12.5px;
+		  top: 55%;	
+		  margin-top: -22px;
+	  color: #fff;
+	  font-size: 4rem;
+	  color: #7a6d7d;
+	  -webkit-transition: all .2s linear;
+		   transition: all .2s linear;
+  }
+  
+  .scrollup_phone:hover span{
+		left: 0px;
+	  top: 0px;
+	  right: 0px;
+	  bottom: 0px;
+  }
+  
+  .scrollup_phone:hover span i{
+		  color: #4b434d;
+  }
+
 /* 2. Index Page --------------------------*/
 /* 2.1. Section Slider --------------------*/
 
@@ -6106,10 +6156,6 @@ background-color:rgba(0,0,0,0.1);
 	line-height: 1;
 }
 
-.shop_item .item_price .new_price  a{
-	text-decoration: underline;
-	
-}
 
 .shop_item .item_price span,
 .shop_single_item .item_price span{
