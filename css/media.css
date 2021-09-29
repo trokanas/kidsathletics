@@ -208,12 +208,14 @@
 }
 
 .mnu_fixed {
-  position: relative;
-  top: 0 !important;
+  position: fixed;
+  padding-top: 40px;
+  
   max-height: none;
 }
 
 .mnu_mobile {
+
 
 }
 
@@ -547,6 +549,7 @@ table .price_button a {
   */
 }
 
+
 .mnu_mobile .input_search {
   float: none;
 }
@@ -559,14 +562,16 @@ table .price_button a {
   width: 200px;
 }
 
+
 .header_fixed .mnu {
-  width: 100%;
+  width: 72%;
   text-align: center;
   margin: 0 auto;
 }
 
+
 .toggle-mnu {
-  right: 0;
+  position: relative;
 }
 
 .about_text_block {
